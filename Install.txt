@@ -1,0 +1,9 @@
+1) open services
+2) search for SQL Server (SQLEXPRESS)
+3) double click, go to Log On tab
+4) copy "This account" field
+5) go to Database folder, right click and proparties
+6) security, add
+7) NT Service\MSSQL$SQLEXPRESS and click check name and then full control
+8) apply, ok, ok
+done
