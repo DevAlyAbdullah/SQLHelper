@@ -36,6 +36,9 @@
             this.BTN_Delete = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Label_Delete = new System.Windows.Forms.Label();
+            this.Label_Restore = new System.Windows.Forms.Label();
+            this.Label_Backup = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -99,6 +102,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Label_Delete);
+            this.groupBox1.Controls.Add(this.Label_Restore);
+            this.groupBox1.Controls.Add(this.Label_Backup);
             this.groupBox1.Controls.Add(this.flowLayoutPanel1);
             this.groupBox1.Location = new System.Drawing.Point(12, 27);
             this.groupBox1.Name = "groupBox1";
@@ -106,6 +112,33 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Database Control";
+            // 
+            // Label_Delete
+            // 
+            this.Label_Delete.AutoSize = true;
+            this.Label_Delete.Location = new System.Drawing.Point(93, 87);
+            this.Label_Delete.Name = "Label_Delete";
+            this.Label_Delete.Size = new System.Drawing.Size(39, 15);
+            this.Label_Delete.TabIndex = 7;
+            this.Label_Delete.Text = "Status";
+            // 
+            // Label_Restore
+            // 
+            this.Label_Restore.AutoSize = true;
+            this.Label_Restore.Location = new System.Drawing.Point(93, 58);
+            this.Label_Restore.Name = "Label_Restore";
+            this.Label_Restore.Size = new System.Drawing.Size(39, 15);
+            this.Label_Restore.TabIndex = 6;
+            this.Label_Restore.Text = "Status";
+            // 
+            // Label_Backup
+            // 
+            this.Label_Backup.AutoSize = true;
+            this.Label_Backup.Location = new System.Drawing.Point(93, 29);
+            this.Label_Backup.Name = "Label_Backup";
+            this.Label_Backup.Size = new System.Drawing.Size(39, 15);
+            this.Label_Backup.TabIndex = 5;
+            this.Label_Backup.Text = "Status";
             // 
             // Form1
             // 
@@ -117,6 +150,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SQLHelper";
@@ -124,6 +158,7 @@
             this.menuStrip1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,5 +173,8 @@
         private Button BTN_Delete;
         private FlowLayoutPanel flowLayoutPanel1;
         private GroupBox groupBox1;
+        private Label Label_Delete;
+        private Label Label_Restore;
+        private Label Label_Backup;
     }
 }
